@@ -13,9 +13,11 @@ def main():
     :return: void
     """
 
-    random_words = TARIELI.get_random_words(count=1000)
+    # full_content = TARIELI.get_full_content()
+    # random_words = TARIELI.get_random_words(count=1000)
+    random_paragraphs = TARIELI.get_random_paragraphs(count=10)
 
-    print(random_words)
+    print(random_paragraphs)
 
 
 if __name__ == '__main__':
