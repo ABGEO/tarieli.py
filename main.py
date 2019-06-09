@@ -1,10 +1,21 @@
-from Tarieli import Tarieli
+"""
+Module tarieli.py
+"""
 
-tarieli = Tarieli()
+from tarieli import Tarieli
+
+TARIELI = Tarieli()
 
 
 def main():
-    print(tarieli.get_random_words(count=1000))
+    """
+    Application main function.
+    :return: void
+    """
+
+    random_words = TARIELI.get_random_words(count=1000)
+
+    print(random_words)
 
 
 if __name__ == '__main__':
