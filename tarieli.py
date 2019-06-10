@@ -12,11 +12,11 @@ class Tarieli:
     """
 
     content = ''
-    content_array = []
+    content_list = []
 
     def __init__(self):
         self.content = self.__read_file()
-        self.content_array = self.content.split(' ')
+        self.content_list = self.content.split(' ')
 
     @classmethod
     def __read_file(cls):
@@ -67,7 +67,7 @@ class Tarieli:
         """
         return_value = ''
         for _ in range(count):
-            random_word = self.__normalize_word(random.choice(self.content_array))
+            random_word = self.__normalize_word(random.choice(self.content_list))
 
             return_value += random_word + '\n'
 
